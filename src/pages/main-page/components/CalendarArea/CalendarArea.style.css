@@ -1,0 +1,108 @@
+.calendarArea {
+  width: 70rem;
+  margin: auto;
+  margin-top: 4.0rem;
+  position: relative;
+}
+
+/* 전체 캘린더 */
+.fc {
+  font-family: var(--font-kotra);
+  font-size: 1rem;
+}
+/* 캘린더 외부 선 */
+.fc-theme-standard .fc-scrollgrid{
+  border: none !important;
+}
+/* 캘린더 내부선선 */
+.fc-theme-standard td,
+.fc-theme-standard th {
+  border: none !important;
+}
+/* 캘린더 첫번째 행 선 */
+.fc-scroller-harness{
+  border-top: 1px solid var( --color-gray);
+  border-bottom: 1px solid var( --color-gray);
+  height: 2rem;
+  display: flex;
+  align-items: center;
+}
+.fc-scroller{overflow: hidden; scrollbar-width: none;  }
+/* 캘린더 아래부분 선 */
+.fc-view-harness{
+  border-bottom: 1px solid var( --color-gray);
+}
+
+/* 캘린더 제목 */
+.fc-toolbar-title{
+  position: absolute;
+  top:-4.5rem;
+  left: 33rem;
+}
+#root > div._appLayout_cspmu_11 > div._appLayoutCenter_cspmu_21 > div > div:nth-child(2) > div > div.fc.fc-media-screen.fc-direction-ltr.fc-theme-standard > div.fc-header-toolbar.fc-toolbar > div:nth-child(2){
+  display: flex;
+
+}
+
+
+/* 캘린더 today <> 영역 */
+#root > div._appLayout_t3qwd_11 > div._appLayoutCenter_t3qwd_21 > div > div:nth-child(2) > div > div > div.fc-header-toolbar.fc-toolbar > div:nth-child(3){
+  margin-bottom: 1.5rem ;
+}
+/* 툴바 왼쪽 영역 캘린더에 붙이기 */
+#root > div._appLayout_t3qwd_11 > div._appLayoutCenter_t3qwd_21 > div > div:nth-child(2) > div > div > div.fc-header-toolbar.fc-toolbar{
+  align-items: flex-end;
+  height: 6.4rem;
+}
+
+/* 버튼 영역 margin bottom */
+.fc .fc-toolbar.fc-header-toolbar {
+  margin: 0;
+}
+/* 버튼 스타일 */
+.fc .fc-button {
+  background-color: #56AC68;
+  border:  1px solid #3A7751;
+  border-radius: 5px 5px 0 0;
+  /* padding: 5px 50px;
+  margin-bottom: 0; */
+}
+/* 왼쪽 버튼 스타일 */
+.fc-todo-button:nth-of-type(1),
+.fc-diary-button:nth-of-type(2){
+  background-color: #56AC68;
+  border:  1px solid #3A7751;
+  border-radius: 5px 5px 0 0;
+  padding: 5px 50px;
+  margin-bottom: -4px;
+}
+
+
+.fc .fc-button:hover{
+  background-color: #7ece8f !important;
+}
+
+/* 일일 박스 크기 설정 */
+.fc-daygrid-day-frame.fc-scrollgrid-sync-inner{
+  height: 6.5rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+.sadDiary{background-color: #6B7773; border: 1px solid #6B7773}
+.depressedDiary{background-color: #3A7751; border: 1px solid #3A7751}
+.sosoDiary{background-color: #61AF72; border: 1px solid #61AF72}
+.joyDiary{background-color: #B7D589; border: 1px solid #B7D589}
+.happyDiary{background-color: #FAE68D; border: 1px solid #FAE68D}
+.noneDiary{background-color: rgb(177, 222, 255);}
+
+}
+/* background - 충돌 영역*/
+:root {
+  --fc-today-bg-color: #DABC71; 
+}
+.fc-today-button{
+  background-color: #DABC71 !important;
+  border: 1px solid #af9656 !important;
+  opacity: 1 !important;
+}
+

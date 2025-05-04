@@ -1,0 +1,340 @@
+@import '../../styles/fonts.css';
+
+.myPageContainer {
+    padding: 1.5rem 2rem;
+    font-family: 'KOTRAHOPE', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px;
+  }
+  p {
+    font-family: 'KOTRAHOPE', sans-serif;
+  }
+
+
+ /* 감정 카드 상단 영역 */
+  .topSection {
+    display: flex;
+    align-items: center;
+    background-color: #f9fafa;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+    transition: all 0.3s ease;
+    gap: 32px;
+ }
+
+  .statusBox {
+    flex-grow: 1;
+    margin-left: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+    
+  }
+  
+  .emojiBox {
+    width: 140px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .emojiImage {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 50%;
+    border: 3px solid #b7d589;
+    background: white;
+    margin: 0 auto;
+  }
+  
+  .emojiLabel {
+    font-family: 'KOTRAHOPE', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #4e4e4e;
+    margin-bottom: 6px;
+    text-align: center;
+    }
+
+  
+  /* 필터 탭 버튼 */
+  .tabButtons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 2rem;
+  }
+  
+  .tabButtons button {
+    padding: 8px 18px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: white;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  .tabButtons button.active {
+    background-color: #b7d589;
+    color: white;
+    border-color: #b7d589;
+    font-weight: 600;
+  }
+  
+  .tabButtons button:hover {
+    background-color: #b7d589;
+    color: white;
+    border-color: #b7d589;
+  }
+  
+  /* 하단 카드 */
+  .chartRow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .chartCol {
+    flex: 1;
+    min-width: 320px;
+    background: #fdfdfd;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  /* 추천음악 */
+  .musicBox {
+    text-align: center;
+    margin-top: 8px;
+  }
+  
+  .musicTitle {
+    font-size: 18px;
+    margin-bottom: 6px;
+    font-weight: 600;
+  }
+  
+  .musicInfo {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .musicEmpty {
+    color: #999;
+    font-size: 14px;
+  }
+  
+  .musicControls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .musicControls button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .musicControls button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  /*감정글귀*/
+  .emotionStatus {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  /*TODO차트*/
+  .todoChartContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .todoTitle {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'KOTRAHOPE', sans-serif;
+    margin-bottom: 0.5rem;
+  }
+  
+  .todoDate {
+    font-size: 16px;
+    font-family: 'KOTRAHOPE', sans-serif;
+    color: #6c757d;
+    margin-bottom: 0.5rem;
+  }
+  
+  .todoRate {
+    font-size: 18px;
+    font-family: 'KOTRAHOPE', sans-serif;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .todoEmpty {
+    font-size: 16px;
+    font-family: 'KOTRAHOPE', sans-serif;
+    color: #6c757d;
+    line-height: 1.5;
+  }
+  
+  .progressBarOuter {
+    height: 12px;
+    border-radius: 8px;
+    background-color: #e9ecef;
+    overflow: hidden;
+  }
+  
+  .progressBarInner {
+    height: 100%;
+    transition: width 0.5s ease;
+  }
+
+
+  /* 감정차트 */
+  .chartContainer {
+    height: 400px;
+    position: relative;
+    padding: 0.5rem 0;
+    font-family: 'KOTRAHOPE', sans-serif;
+  }
+  
+  .chartTitle {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .chartDate {
+    font-size: 16px;
+    font-family: 'KOTRAHOPE', sans-serif;
+    color: #6c757d;
+    margin-bottom: 0.5rem;
+  }
+  
+  .chartEmpty {
+    font-size: 16px;
+    font-family: 'KOTRAHOPE', sans-serif;
+    color: #6c757d;
+    line-height: 1.5;
+  }
+
+  /*탭영역*/
+
+  .tabWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 2rem;
+    font-family: 'KOTRAHOPE', sans-serif;
+    font-size: 16px;
+  }
+  
+  .tabButtons {
+    display: flex;
+    gap: 12px;
+  }
+  
+  .tabButton {
+    padding: 8px 18px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: white;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  .tabButton:hover,
+  .tabButton.active {
+    background-color: #b7d589;
+    color: white;
+    border-color: #b7d589;
+    font-weight: 600;
+  }
+  
+  .dateInputGroup {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .dateLabel {
+    font-size: 15px;
+    font-weight: 500;
+    color: #4e4e4e;
+  }
+  
+  .dateInput {
+    padding: 6px 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-family: 'KOTRAHOPE', sans-serif;
+    font-size: 15px;
+  }
+  
+
+  @media (max-width: 768px) {
+    .topSection {
+      flex-direction: column;
+      text-align: center;
+      padding: 16px;
+    }
+  
+    .emojiBox {
+        width: 100%;
+        margin-bottom: 12px;
+      }
+    
+    .emojiImage {
+    width: 80px;
+    height: 80px;
+    }
+    
+  
+    .statusBox {
+      margin-left: 0;
+      padding: 0;
+    }
+  
+    .chartRow {
+      flex-direction: column;
+    }
+  
+    .chartCol {
+      min-width: unset;
+    }
+  
+    .tabButtons {
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+  }
+  
